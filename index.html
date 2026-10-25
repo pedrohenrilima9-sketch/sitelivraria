@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 🚀 SpaceBook</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="" href="">
+</head>
+
+
+<body>
+    <header class="topo">
+      <h1>SpaceBook</h1>
+    </header>
+  <input type="text" id="busca" placeholder="Digite a categoria do livro...">
+  <button onclick="procurar()"> Buscar </button>
+<script>
+function procurar() {
+  let texto = 
+  document.getElementById("busca").value.toLowerCase();
+
+  let livros = {
+    "Livros de Ação": "ação.html",
+    "Livros de Fantasia":"fantasia.html",
+    "Livros de Terror":"terror.html",
+    "Livros de Romance":"romance (1).html",
+    "Livros de RomanceLGBT":"romancelgbt (1).html",
+    "Livros de Distopia": "distopia.html",
+    "Livros de Suspense": "suspense.html"
+  };
+  
+  for (let nome in livros) {
+    if (nome.toLowerCase().includes(texto)) {
+      window.location.href = livros[nome];
+      return;
+    }
+  }
+  alert("Livro não encontrado!");
+}
+
+</script>
+
+<section class="livros-container">
+  <h2>Livros mais acessados:</h2>
+  <div class="lista-livros">
+    <div class="livro">
+      <p>Lady Killers</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.18.30.jpeg" alt="CAPA DO LIVRO"  width="150px" height="200px">
+    </div>
+    <div class="livro">
+      <p>A mandíbula de Caim</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.18.31.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px"> 
+    </div>
+    <div class="livro">
+      <p>O vilarejo</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.18.38.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px">
+    </div>
+    <div class="livro">
+      <p>Desenfreados</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.19.45.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px"> 
+    </div>
+  </div>
+</section>
+
+
+  <section class="livros-container">
+  <h2>Novos títulos:</h2>
+  <div class="lista-livros">
+    <div class="livro">
+      <p>Jantar Secreto</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.18.35.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px">
+    </div>
+    <div class="livro">
+      <p>Wideaway</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.19.50.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px">
+    </div>
+    <div class="livro">
+      <p> Manual de assasinatos para boas garotas</p>
+      <img src="WhatsApp Image 2025-10-09 at 14.18.33.jpeg" alt="CAPA DO LIVRO" width="150px" height="200px">
+    </div>
+    
+  </div>
+</div>
+
+    </section>
+  </main>
+</div>  
+
+
+<section class="categorias">
+  <h2>Categorias Populares</h2>
+  <div class="categorias-lista">
+    <a href="ação.html"><button>Ação</button></a>
+    <a href="terror.html"><button>Terror</button></a>
+    <a href="romance (1).html"><button>Romance</button></a>
+  </div>
+</section>
+
+  <nav class="menu"><a href="index.html"><button>🏠 Início</button></a>
+    <a href="estante.html"><button>📚 Estante</button></a>
+    <a href="perfil.html"><button>👤 Perfil</button></a>
+    
+  </nav>
+  
+  </div>
+</body>
+</html>

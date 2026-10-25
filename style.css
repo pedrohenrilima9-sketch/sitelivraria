@@ -1,0 +1,200 @@
+html {
+    text-align: center;
+    background-color: #7816b15b;
+    margin: 1em 2em;
+    border: 8px solid rgb(155, 4, 255);    
+    padding: 5px;
+    padding: 10px 5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: cursive;
+    background-color: #D1AEFC; 
+    color: #9F6BDF; 
+}
+  
+header.topo {
+   width: 100%;
+   background: #941caa;
+   padding: 20px 0;
+   text-align: center;
+   color: white;
+   font-size: 26px;
+   font-weight: 700px;
+   letter-spacing: 1px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0,.15);
+}
+.busca-container {
+    margin: 25px auto;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#busca {
+    width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #d3d7e0;
+    font-size: 16px;
+    transition: 0.2s;
+}
+#busca.focus {
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 6px rgba(75,111,255,0.4);
+}
+.busca-container button {
+    padding: 12px 18px;
+    background: white;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.busca-container button :hover{
+    background: 3a55d6;
+}
+  
+h1 {
+    margin: 0;
+}
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(223, 156, 223);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 2px solid #ffffff;
+}
+  
+.menu button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #7c3cc9;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    transition:0.1s;
+    width: 200px;
+    height: 50px;
+}
+button:hover{
+    transform: scale(1.2);
+    background: #9F6BDF;
+}
+button:active{
+    transform: scale(0.8);
+    background: #888;
+}
+ section h2 {
+  margin-left: 20px;
+   margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 22px;   font-weight: 600;
+ }
+
+
+ .categorias {
+   margin-top: 20px;
+}
+ 
+ .categorias-lista {
+   display: flex;
+   gap: 12px;
+   flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0 20px;
+ }
+
+
+
+
+ .livros-container {
+  margin-top: 25px;
+}
+
+.lista-livros {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 20px 25px;
+}
+
+.livro {
+  min-width: 150px;
+  background: white;
+  border-radius: 16px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transition: 0.2s;
+}
+
+.livro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.20);
+}
+
+.livro img {
+  width: 140px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.livro p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+p {
+    color:rgb(255, 255, 255)
+}
+#visor{
+      
+    background-color: #9F6BDF;
+    font-family: monospace;    
+}
+#busca{
+    background-color: white;
+}
+.lista-livros {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+ body{
+    padding-bottom: 200px;
+ }
+  p {
+    color: #d3d7e0;
+  }
+  h1{
+    color: #ffffff;
+  }
+  

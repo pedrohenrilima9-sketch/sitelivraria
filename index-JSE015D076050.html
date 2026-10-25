@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceBook</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="" href="">
+</head>
+<body>
+  <main>
+    <section id="estante">
+      <h1>Livros Populares</h1>
+      
+  <input type="text" id="busca" placeholder="Digite o nome do livro...">
+  <button onclick="procurar()"> Buscar </button>
+
+
+<script>
+function procurar() {
+  let texto = 
+  document.getElementById("busca").value.toLowerCase();
+
+  let livros = {
+    "Livros de Ação": "ação.html",
+    "Livros de Fantasia":"fantasia.html",
+    "Livros de Terror":"terror.html",
+    "Livros de Romance":"romance.html",
+    "Livros de RomanceLGBT":"romancelgbt.html",
+    "Livros de Distopia": "distopia.html",
+    "Livros de Suspense": "suspense.html",
+  };
+  
+  for (let nome in livros) {
+    if (nome.toLowerCase().includes(texto)) {
+      window.location.href = livros[nome];
+      return;
+    }
+  }
+  alert("Livro não encontrado!");
+}
+
+</script>
+<div class=".myContainer">      
+      <div class="livros">
+        <div class="livro">
+          <img src="" alt="CAPA DO LIVRO">
+          <p>Nome do Livro</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>  
+<img src="ChatGPT Image 6 de out. de 2025, 11_27_08.png" width="200" height="250" alt="imagem de ilustrativa">
+<img src="ChatGPT Image 6 de out. de 2025, 11_27_08.png" width="200" height="250" alt="imagem de ilustrativa">
+<img src="ChatGPT Image 6 de out. de 2025, 11_27_08.png" width="200" height="250" alt="imagem de ilustrativa">
+
+
+  <nav class="menu">
+    <a href="index.html" target="_blank">
+      <button> 🏠 Início</button>
+    </a>
+    <a href="estante.html" target="_blank">
+      <button> 📚 Estante</button>
+    </a>
+    <a href="perfil.html" target="_blank">
+      <button> 👤 Perfil</button>
+    </a>
+  </nav>
+</body>
+</html>
